@@ -29,6 +29,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 RUN apt-get install -y squid
 RUN apt-get install -y apache2-utils
+RUN apt-get install -y ocl-icd-opencl-dev
 RUN apt-get clean
 
 COPY entry.sh /
